@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品系列 - 卡姿兰</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏（与首页相同） -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src= "images/logo2.png" alt="卡姿兰"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="products.html" class="active">产品系列</a></li>
+                    <li><a href="tutorials.html">彩妆教程</a></li>
+                    <li><a href="about.html">品牌故事</a></li>
+                    <li><a href="member.html">会员中心</a></li>
+                    <li><a href="stores.html">线下门店</a></li>
+					<li><a href="contact.html" >联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 产品页面包屑导航 -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><i class="fas fa-angle-right"></i></li>
+                <li>产品系列</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 产品分类筛选 -->
+    <section class="product-filter">
+        <div class="container">
+            <div class="filter-header">
+                <h1>产品系列</h1>
+                <div class="filter-sort">
+                    <label for="sort">排序方式：</label>
+                    <select id="sort">
+                        <option value="default">默认排序</option>
+                        <option value="price-asc">价格从低到高</option>
+                        <option value="price-desc">价格从高到低</option>
+                        <option value="popular">人气最高</option>
+                        <option value="newest">最新上市</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-content">
+                <aside class="filter-sidebar">
+                    <div class="filter-group">
+                        <h3>产品类别</h3>
+                        <ul>
+                            <li><a href="#" class="active">全部产品</a></li>
+                            <li><a href="#">唇部彩妆</a></li>
+                            <li><a href="#">眼部彩妆</a></li>
+                            <li><a href="#">面部彩妆</a></li>
+                            <li><a href="#">彩妆套装</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>产品系列</h3>
+                        <ul>
+                            <li><a href="#" class="active">全部系列</a></li>
+                            <li><a href="#">雾感系列</a></li>
+                            <li><a href="#">水润系列</a></li>
+                            <li><a href="#">持久系列</a></li>
+                            <li><a href="#">限量系列</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>价格区间</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="500" value="250" class="slider" id="priceRange">
+                            <div class="price-values">
+                                <span>¥0</span>
+                                <span>¥500</span>
+                            </div>
+                            <div class="selected-price">
+                                当前选择：<span id="selectedPrice">¥0-¥250</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>产品功效</h3>
+                        <div class="filter-tags">
+                            <a href="#" class="tag">持久不脱妆</a>
+                            <a href="#" class="tag">水润保湿</a>
+                            <a href="#" class="tag">遮瑕</a>
+                            <a href="#" class="tag">防水</a>
+                            <a href="#" class="tag">防汗</a>
+                            <a href="#" class="tag">不晕染</a>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-block">重置筛选条件</button>
+                </aside>
+                
+                <main class="product-list">
+                    <div class="product-grid">
+                        <!-- 产品卡片1 -->
+                        <div class="product-card">
+                            <div class="product-badge">新品</div>
+                            <a href="product-detail.html">
+                                <img src= "images/product-1.jpg" alt="眼影盘">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">完美日记十二色眼影 「小王子」盘</a></h3>
+                                <p class="product-desc">轻盈持久，16小时不脱妆</p>
+                                <div class="product-meta">
+                                    <p class="product-price">¥129</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片2 -->
+                        <div class="product-card">
+                            <div class="product-badge">热卖</div>
+                            <a href="product-detail.html">
+                                <img src="images/product-2.jpg" alt="大眼睛睫毛膏">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">卡姿兰大眼睛睫毛膏</a></h3>
+                                <p class="product-desc">浓密卷翘，不晕染</p>
+                                <div class="product-meta">
+                                    <p class="product-price">¥89</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片3 -->
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="images/product-3.jpg" alt="水润气垫BB霜">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">彩棠「润玉」粉膏</a></h3>
+                                <p class="product-desc">恒久润养，16H透贴玉光肌</p>
+                                <div class="product-meta">
+                                    <p class="product-price">¥159</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片4 -->
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="images/product-4.jpg" alt="多色眼影盘">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">卡姿兰多色眼影盘</a></h3>
+                                <p class="product-desc">12色搭配，轻松打造多种妆容</p>
+                                <div class="product-meta">
+                                    <p class="product-price">¥199</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片5 -->
+                        <div class="product-card">
+                            <div class="product-badge">限量</div>
+                            <a href="product-detail.html">
+                                <img src="images/product-5.jpg" alt="星钻唇膏">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">星钻唇膏</a></h3>
+                                <p class="product-desc">闪耀星钻光泽，奢华体验</p>
+                                <div class="product-meta">
+                                    <p class="product-price">¥169</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片6 -->
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src= "images/product-6.jpg" alt="妆前乳">
+                            </a> 
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">彩棠「大师」多效妆前乳</a></h3>
+                                <p class="product-desc">柔润服帖&nbsp; 卡粉救星&nbsp;</p>
+                                <div class="product-meta">
+                                  <p class="product-price">¥154</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片7 -->
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="images/product-7.jpg" alt="修容高光盘">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">修容高光盘</a></h3>
+                                <p class="product-desc">立体轮廓，自然修饰</p>
+                                <div class="product-meta">
+                                    <p class="product-price">¥149</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片8 -->
+                        <div class="product-card">
+                            <div class="product-badge">套装</div>
+                            <a href="product-detail.html">
+                                <img src= "images/category-set.jpg" alt="补水套装">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">韩束红蛮腰水乳套装</a></h3>
+                                <p class="product-desc">补水紧致 抗皱护肤</p>
+                                <div class="product-meta">
+                                    <p class="product-price">¥299</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 分页导航 -->
+                    <div class="pagination">
+                        <a href="#" class="page-nav disabled"><i class="fas fa-angle-left"></i> 上一页</a>
+                        <a href="#" class="page-number active">1</a>
+                        <a href="#" class="page-number">2</a>
+                        <a href="#" class="page-number">3</a>
+                        <a href="#" class="page-number">4</a>
+                        <a href="#" class="page-number">5</a>
+                        <a href="#" class="page-nav">下一页 <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚（与首页相同） -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>购物指南</h4>
+                    <ul>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">会员制度</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>配送方式</h4>
+                    <ul>
+                        <li><a href="#">上门自提</a></li>
+                        <li><a href="#">快递配送</a></li>
+                        <li><a href="#">配送范围</a></li>
+                        <li><a href="#">配送费用</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>支付方式</h4>
+                    <ul>
+                        <li><a href="#">在线支付</a></li>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">分期付款</a></li>
+                        <li><a href="#">礼品卡支付</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于国色坊</h4>
+                    <ul>
+                      <li><a href="#">品牌故事</a></li>
+                        <li><a href="#">新闻中心</a></li>
+                        <li><a href="#">加入我们</a></li>
+                        <li><a href="#">门店查询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+
+                    </div>
+                    <div class="contact-info">
+                        <p>客服热线：400-123-4567</p>
+                        <p>服务时间：9:00-21:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 国色坊中国美妆品牌宣传有限公司  版权所有</p>
+                <div class="legal-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">使用条款</a>
+                    <a href="#">法律声明</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+</body>
+</html>

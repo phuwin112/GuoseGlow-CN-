@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彩妆教程 - 卡姿兰</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏（与首页相同） -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src= "images/logo2.png" alt="卡姿兰"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="products.html">产品系列</a></li>
+                    <li><a href="tutorials.html" class="active">彩妆教程</a></li>
+                    <li><a href="about.html">品牌故事</a></li>
+                    <li><a href="member.html">会员中心</a></li>
+                    <li><a href="stores.html">线下门店</a></li>
+					<li><a href="contact.html" >联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><i class="fas fa-angle-right"></i></li>
+                <li>彩妆教程</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 教程分类筛选 -->
+    <section class="tutorial-filter">
+        <div class="container">
+            <div class="filter-header">
+                <h1>彩妆教程</h1>
+                <div class="filter-search">
+                    <input type="text" placeholder="搜索教程...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="filter-tabs">
+                <a href="#" class="tab active">全部教程</a>
+                <a href="#" class="tab">新手入门</a>
+                <a href="#" class="tab">日常妆容</a>
+                <a href="#" class="tab">派对妆容</a>
+                <a href="#" class="tab">节日限定</a>
+                <a href="#" class="tab">明星同款</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精选教程 -->
+    <section class="featured-tutorial">
+        <div class="container">
+            <div class="featured-card">
+                <div class="featured-image">
+                    <img src="images/featured-tutorial.jpg" alt="2025秋冬妆容趋势">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <span class="badge">精选</span>
+                    <h2>2025秋冬妆容趋势解析</h2>
+                    <p class="meta">由卡姿兰首席彩妆师 Mia 主讲 · 时长 15:32 · 3天前更新</p>
+                    <p class="excerpt">本教程将带你了解2025年秋冬最流行的妆容趋势，从底妆到眼妆，详细解析每个步骤的技巧和产品选择，帮助你打造完美的季节妆容。</p>
+                    <div class="stats">
+                        <span><i class="far fa-eye"></i> 12.5K 观看</span>
+                        <span><i class="far fa-thumbs-up"></i> 1.2K 点赞</span>
+                    </div>
+                    <a href="tutorial-detail.html" class="btn">观看教程</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教程列表 -->
+    <section class="tutorial-list">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">热门教程</h2>
+                <a href="#" class="view-all">查看全部 <i class="fas fa-angle-right"></i></a>
+            </div>
+            
+            <div class="tutorial-grid">
+                <!-- 教程卡片1 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="images/tutorial-1.jpg" alt="5分钟日常通勤妆">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="duration">08:45</span>
+                    </div>
+                    <div class="tutorial-info">
+                        <h3><a href="tutorial-detail.html">5分钟日常通勤妆</a></h3>
+                        <p class="meta">由彩妆师 Mia 主讲 · 时长 08:45</p>
+                        <div class="stats">
+                            <span><i class="far fa-eye"></i> 8.7K</span>
+                            <span><i class="far fa-thumbs-up"></i> 856</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 教程卡片2 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="images/tutorial-2.jpg" alt="闪耀派对妆容">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="duration">12:30</span>
+                    </div>
+                    <div class="tutorial-info">
+                        <h3><a href="tutorial-detail.html">闪耀派对妆容</a></h3>
+                        <p class="meta">由彩妆师 Amy 主讲 · 时长 12:30</p>
+                        <div class="stats">
+                            <span><i class="far fa-eye"></i> 10.2K</span>
+                            <span><i class="far fa-thumbs-up"></i> 1.1K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 教程卡片3 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="images/tutorial-3.jpg" alt="甜美约会妆容">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="duration">10:15</span>
+                    </div>
+                    <div class="tutorial-info">
+                        <h3><a href="tutorial-detail.html">甜美约会妆容</a></h3>
+                        <p class="meta">由彩妆师 Zoe 主讲 · 时长 10:15</p>
+                        <div class="stats">
+                            <span><i class="far fa-eye"></i> 9.3K</span>
+                            <span><i class="far fa-thumbs-up"></i> 932</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 教程卡片4 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="images/tutorial-4.jpg" alt="雾面哑光唇妆">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="duration">06:20</span>
+                    </div>
+                    <div class="tutorial-info">
+                        <h3><a href="tutorial-detail.html">雾面哑光唇妆</a></h3>
+                        <p class="meta">由彩妆师 Lily 主讲 · 时长 06:20</p>
+                        <div class="stats">
+                            <span><i class="far fa-eye"></i> 7.5K</span>
+                            <span><i class="far fa-thumbs-up"></i> 723</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 教程卡片5 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="images/tutorial-5.jpg" alt="夏日防水妆容">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="duration">14:05</span>
+                    </div>
+                    <div class="tutorial-info">
+                        <h3><a href="tutorial-detail.html">夏日防水妆容</a></h3>
+                        <p class="meta">由彩妆师 Emma 主讲 · 时长 14:05</p>
+                        <div class="stats">
+                            <span><i class="far fa-eye"></i> 11.8K</span>
+                            <span><i class="far fa-thumbs-up"></i> 1.3K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 教程卡片6 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="images/tutorial-6.jpg" alt="秋冬红唇妆">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="duration">09:40</span>
+                    </div>
+                    <div class="tutorial-info">
+                        <h3><a href="tutorial-detail.html">秋冬红唇妆</a></h3>
+                        <p class="meta">由彩妆师 Olivia 主讲 · 时长 09:40</p>
+                        <div class="stats">
+                            <span><i class="far fa-eye"></i> 8.9K</span>
+                            <span><i class="far fa-thumbs-up"></i> 945</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 分页导航 -->
+            <div class="pagination">
+                <a href="#" class="page-nav"><i class="fas fa-angle-left"></i> 上一页</a>
+                <a href="#" class="page-number active">1</a>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="page-number">3</a>
+                <a href="#" class="page-number">4</a>
+                <a href="#" class="page-number">5</a>
+                <a href="#" class="page-nav">下一页 <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 彩妆师推荐 -->
+    <section class="artist-recommend">
+        <div class="container">
+            <h2 class="section-title">彩妆师推荐</h2>
+            <div class="artist-grid">
+                <!-- 彩妆师1 -->
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src= "images/artist-1.jpg" alt="Lisa 彩妆师">
+                    </div>
+                    <div class="artist-info">
+                        <h3>唐毅</h3>
+                        <p class="title">中国顶级化妆师、彩棠创始人</p>
+                        <p class="bio">深耕美妆行业20余年，深谙亚洲女性的妆容痛点和审美需求&nbsp;</p>
+                        <a href="#" class="btn btn-outline btn-small">查看教程</a>
+                    </div>
+                </div>
+                
+                <!-- 彩妆师2 -->
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="images/artist-2.jpg" alt="Mia 彩妆师">
+                    </div>
+                    <div class="artist-info">
+                        <h3>Mia</h3>
+                        <p class="title">卡姿兰明星彩妆师</p>
+                        <p class="bio">专注新娘妆与派对妆，打造立体精致妆容</p>
+                        <a href="#" class="btn btn-outline btn-small">查看教程</a>
+                    </div>
+                </div>
+                
+                <!-- 彩妆师3 -->
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="images/artist-3.jpg" alt="Amy 彩妆师">
+                    </div>
+                    <div class="artist-info">
+                        <h3>Amy</h3>
+                        <p class="title">卡姿兰创意彩妆师</p>
+                        <p class="bio">色彩搭配专家，擅长打造时尚前卫的妆容</p>
+                        <a href="#" class="btn btn-outline btn-small">查看教程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品搭配推荐 -->
+    <section class="product-recommend">
+        <div class="container">
+            <h2 class="section-title">教程推荐产品</h2>
+            <div class="products-slider">
+                <div class="product-slide">
+                    <div class="product-card">
+                        <div class="product-badge">热卖</div>
+                        <a href="product-detail.html">
+                            <img src="images/recommend-1.jpg" alt="雾感哑光唇釉">
+                        </a>
+                        <div class="product-info">
+                            <h3><a href="product-detail.html">雾感哑光唇釉</a></h3>
+                            <p class="product-price">¥129</p>
+                            <a href="#" class="btn btn-small">加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-slide">
+                    <div class="product-card">
+                        <a href="product-detail.html">
+                            <img src="images/recommend-2.jpg" alt="防水眼线笔">
+                        </a>
+                        <div class="product-info">
+                            <h3><a href="product-detail.html">防水眼线笔</a></h3>
+                            <p class="product-price">¥79</p>
+                            <a href="#" class="btn btn-small">加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-slide">
+                    <div class="product-card">
+                        <a href="product-detail.html">
+                            <img src="images/recommend-3.jpg" alt="多色眼影盘">
+                        </a>
+                        <div class="product-info">
+                            <h3><a href="product-detail.html">多色眼影盘</a></h3>
+                            <p class="product-price">¥199</p>
+                            <a href="#" class="btn btn-small">加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-slide">
+                    <div class="product-card">
+                        <div class="product-badge">新品</div>
+                        <a href="product-detail.html">
+                            <img src="images/recommend-4.jpg" alt="水润气垫BB霜">
+                        </a>
+                        <div class="product-info">
+                            <h3><a href="product-detail.html">水润气垫BB霜</a></h3>
+                            <p class="product-price">¥159</p>
+                            <a href="#" class="btn btn-small">加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚（与首页相同） -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>购物指南</h4>
+                    <ul>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">会员制度</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>配送方式</h4>
+                    <ul>
+                        <li><a href="#">上门自提</a></li>
+                        <li><a href="#">快递配送</a></li>
+                        <li><a href="#">配送范围</a></li>
+                        <li><a href="#">配送费用</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>支付方式</h4>
+                    <ul>
+                        <li><a href="#">在线支付</a></li>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">分期付款</a></li>
+                        <li><a href="#">礼品卡支付</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于国色坊</h4>
+                    <ul>
+                      <li><a href="#">品牌故事</a></li>
+                        <li><a href="#">新闻中心</a></li>
+                        <li><a href="#">加入我们</a></li>
+                        <li><a href="#">门店查询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+ 
+                    </div>
+                    <div class="contact-info">
+                        <p>客服热线：400-123-4567</p>
+                        <p>服务时间：9:00-21:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 国色坊中国美妆品牌宣传有限公司  版权所有</p>
+                <div class="legal-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">使用条款</a>
+                    <a href="#">法律声明</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+</body>
+</html>

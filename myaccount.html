@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的账户 - 卡姿兰</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- 顶部导航栏 -->
+<header class="header">
+  <div class="container">
+    <div class="logo"> <a href="#"><img src= "images/logo2.png" alt="卡姿兰"></a> </div>
+    <nav class="main-nav">
+      <ul>
+         <li><a href="index.html">首页</a></li>
+                    <li><a href="products.html">产品系列</a></li>
+                    <li><a href="tutorials.html">彩妆教程</a></li>
+                    <li><a href="about.html">品牌故事</a></li>
+                    <li><a href="member.html">会员中心</a></li>
+                    <li><a href="stores.html">线下门店</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons"> <a href="#"><i class="fas fa-search"></i></a> <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fas fa-shopping-bag"></i></a> </div>
+  </div>
+</header>
+<!-- 会员中心容器 - 独立封装 -->
+<div class="account-container">
+  <div class="account-header">
+    <h1>我的账户</h1>
+  </div>
+  <div class="account-content"> 
+    <!-- 侧边栏菜单 -->
+    <div class="account-sidebar">
+      <ul class="account-menu">
+        <li><a href="#" class="active"><i class="fas fa-user"></i> 账户概览</a></li>
+        <li><a href="#"><i class="fas fa-shopping-bag"></i> 我的订单</a></li>
+        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 收货地址</a></li>
+        <li><a href="#"><i class="fas fa-heart"></i> 我的收藏</a></li>
+        <li><a href="#"><i class="fas fa-star"></i> 我的积分</a></li>
+        <li><a href="#"><i class="fas fa-ticket-alt"></i> 我的优惠券</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> 账户设置</a></li>
+        <li><a href="#"><i class="fas fa-sign-out-alt"></i> 退出登录</a></li>
+      </ul>
+    </div>
+    
+    <!-- 主内容区 -->
+    <div class="account-main"> 
+      <!-- 欢迎卡片 -->
+      <div class="account-card">
+        <div class="welcome-message"> <img src="images/user-avatar.jpg" alt="用户头像" class="user-avatar">
+          <div class="user-info">
+            <h3>您好，李小姐</h3>
+            <p>金卡会员 | 会员有效期至2024年12月31日</p>
+          </div>
+        </div>
+        <div class="account-stats">
+          <div class="stat-item">
+            <div class="stat-value">¥1,258</div>
+            <div class="stat-label">累计消费</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">856</div>
+            <div class="stat-label">可用积分</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">5</div>
+            <div class="stat-label">待发货</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">12</div>
+            <div class="stat-label">收藏商品</div>
+          </div>
+        </div>
+        <div class="account-actions">
+          <button class="btn-account btn-primary">会员专属优惠</button>
+          <button class="btn-account btn-outline">升级会员等级</button>
+        </div>
+      </div>
+      
+      <!-- 最近订单 -->
+      <div class="account-card">
+        <h2>最近订单</h2>
+        <div class="recent-orders">
+          <table>
+            <thead>
+              <tr>
+                <th>订单编号</th>
+                <th>日期</th>
+                <th>金额</th>
+                <th>状态</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#CSL20250001</td>
+                <td>2025-05-15</td>
+                <td>¥298</td>
+                <td><span class="order-status status-completed">已完成</span></td>
+                <td><button class="btn-view">查看</button></td>
+              </tr>
+              <tr>
+                <td>#CSL20250002</td>
+                <td>2025-05-10</td>
+                <td>¥159</td>
+                <td><span class="order-status status-shipped">已发货</span></td>
+                <td><button class="btn-view">查看</button></td>
+              </tr>
+              <tr>
+                <td>#CSL20250003</td>
+                <td>2025-05-05</td>
+                <td>¥89</td>
+                <td><span class="order-status status-pending">待发货</span></td>
+                <td><button class="btn-view">查看</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- 会员特权 -->
+      <div class="account-card">
+        <h2>会员特权</h2>
+        <div class="member-benefits">
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+            <div style="text-align: center; padding: 15px;">
+              <div style="font-size: 24px; color: #e83a7d; margin-bottom: 10px;"> <i class="fas fa-percent"></i> </div>
+              <h3 style="font-size: 16px; margin-bottom: 5px;">专属折扣</h3>
+              <p style="font-size: 14px; color: #666;">金卡会员享8.5折优惠</p>
+            </div>
+            <div style="text-align: center; padding: 15px;">
+              <div style="font-size: 24px; color: #e83a7d; margin-bottom: 10px;"> <i class="fas fa-birthday-cake"></i> </div>
+              <h3 style="font-size: 16px; margin-bottom: 5px;">生日礼遇</h3>
+              <p style="font-size: 14px; color: #666;">生日月享双倍积分</p>
+            </div>
+            <div style="text-align: center; padding: 15px;">
+              <div style="font-size: 24px; color: #e83a7d; margin-bottom: 10px;"> <i class="fas fa-gift"></i> </div>
+              <h3 style="font-size: 16px; margin-bottom: 5px;">专属礼品</h3>
+              <p style="font-size: 14px; color: #666;">每月新品试用机会</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 底部 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>购物指南</h4>
+        <ul>
+          <li><a href="#">购物流程</a></li>
+          <li><a href="#">会员制度</a></li>
+          <li><a href="#">常见问题</a></li>
+          <li><a href="#">联系客服</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>配送方式</h4>
+        <ul>
+          <li><a href="#">上门自提</a></li>
+          <li><a href="#">快递配送</a></li>
+          <li><a href="#">配送范围</a></li>
+          <li><a href="#">配送费用</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>支付方式</h4>
+        <ul>
+          <li><a href="#">在线支付</a></li>
+          <li><a href="#">货到付款</a></li>
+          <li><a href="#">分期付款</a></li>
+          <li><a href="#">礼品卡支付</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于卡姿兰</h4>
+        <ul>
+          <li><a href="#">品牌故事</a></li>
+          <li><a href="#">新闻中心</a></li>
+          <li><a href="#">加入我们</a></li>
+          <li><a href="#">门店查询</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关注我们</h4>
+        <div class="social-links"> <a href="#"><i class="fab fa-weixin"></i></a> <a href="#"><i class="fab fa-weibo"></i></a> <a href="#"><i class="fab fa-qq"></i></a>  </div>
+        <div class="contact-info">
+          <p>客服热线：400-123-4567</p>
+          <p>服务时间：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 卡姿兰化妆品有限公司 版权所有</p>
+      <div class="legal-links"> <a href="#">隐私政策</a> <a href="#">使用条款</a> <a href="#">法律声明</a> </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

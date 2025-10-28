@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会员中心 - 卡姿兰</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- 顶部导航栏（与首页相同） -->
+<header class="header">
+  <div class="container">
+    <div class="logo"> <a href="index.html"><img src= "images/logo2.png" alt="卡姿兰"></a> </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="products.html">产品系列</a></li>
+        <li><a href="tutorials.html">彩妆教程</a></li>
+        <li><a href="about.html">品牌故事</a></li>
+        <li><a href="member.html" class="active">会员中心</a></li>
+        <li><a href="stores.html">线下门店</a></li>
+		  <li><a href="contact.html" >联系我们</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons"> <a href="#"><i class="fas fa-search"></i></a> <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fas fa-shopping-bag"></i></a> </div>
+  </div>
+</header>
+
+<!-- 面包屑导航 -->
+<section class="breadcrumb">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><i class="fas fa-angle-right"></i></li>
+      <li>会员中心</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 会员中心主内容 -->
+<section class="member-center">
+  <div class="container"> 
+    <!-- 登录/注册切换 -->
+    <div class="auth-tabs">
+      <div class="tab-header">
+        <button class="tab-btn active" data-tab="login">会员登录</button>
+        <button class="tab-btn" data-tab="register">新会员注册</button>
+      </div>
+      
+      <!-- 登录表单 -->
+      <div class="tab-content active" id="login">
+        <form class="auth-form">
+          <div class="form-group">
+            <label for="login-email">手机号/邮箱</label>
+            <input type="text" id="login-email" placeholder="请输入手机号或邮箱">
+          </div>
+          <div class="form-group">
+            <label for="login-password">密码</label>
+            <input type="password" id="login-password" placeholder="请输入密码">
+            <a href="#" class="forgot-password">忘记密码?</a> </div>
+          <button type="submit" class="btn btn-block">登录</button>
+          <div class="social-login">
+            <p>快速登录</p>
+            <div class="social-btns"> <a href="#" class="social-btn wechat"><i class="fab fa-weixin"></i> 微信</a> <a href="#" class="social-btn weibo"><i class="fab fa-weibo"></i> 微博</a> </div>
+          </div>
+        </form>
+      </div>
+      
+      <!-- 注册表单 -->
+      <div class="tab-content" id="register">
+        <form class="auth-form">
+          <div class="form-group">
+            <label for="register-phone">手机号</label>
+            <input type="tel" id="register-phone" placeholder="请输入手机号">
+            <button type="button" class="btn-sms">获取验证码</button>
+          </div>
+          <div class="form-group">
+            <label for="register-code">验证码</label>
+            <input type="text" id="register-code" placeholder="请输入验证码">
+          </div>
+          <div class="form-group">
+            <label for="register-password">设置密码</label>
+            <input type="password" id="register-password" placeholder="6-20位字母和数字组合">
+          </div>
+          <div class="form-group">
+            <label for="register-confirm">确认密码</label>
+            <input type="password" id="register-confirm" placeholder="再次输入密码">
+          </div>
+          <div class="form-agree">
+            <input type="checkbox" id="agree-terms">
+            <label for="agree-terms">我已阅读并同意<a href="#">《卡姿兰会员协议》</a>和<a href="#">《隐私政策》</a></label>
+          </div>
+          <button type="submit" class="btn btn-block">立即注册</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- 会员特权展示 -->
+    <div class="member-benefits">
+      <h2 class="section-title">会员尊享特权</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-gift"></i> </div>
+          <h3>新会员礼包</h3>
+          <p>注册即享价值¥199的新人礼包，包含多款明星产品试用装</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-percent"></i> </div>
+          <h3>会员专属折扣</h3>
+          <p>银卡会员享9折，金卡会员享8.5折，黑卡会员享8折优惠</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-birthday-cake"></i> </div>
+          <h3>生日特权</h3>
+          <p>生日当月可领取专属生日礼包及双倍积分特权</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-star"></i> </div>
+          <h3>积分兑换</h3>
+          <p>消费累积积分，可兑换正装产品、小样及专属礼品</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-ticket-alt"></i> </div>
+          <h3>专属优惠券</h3>
+          <p>每月领取会员专属优惠券，线上线下均可使用</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-video"></i> </div>
+          <h3>专属教程</h3>
+          <p>会员专享彩妆教程，由卡姿兰首席彩妆师亲自指导</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 会员等级说明 -->
+    <div class="member-levels">
+      <h2 class="section-title">会员等级</h2>
+      <div class="levels-table">
+        <table>
+          <thead>
+            <tr>
+              <th>会员等级</th>
+              <th>成长值要求</th>
+              <th>折扣特权</th>
+              <th>生日礼遇</th>
+              <th>积分倍数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="level-badge silver">银卡会员</span></td>
+              <td>0-999</td>
+              <td>9折</td>
+              <td>生日礼包</td>
+              <td>1倍</td>
+            </tr>
+            <tr>
+              <td><span class="level-badge gold">金卡会员</span></td>
+              <td>1000-4999</td>
+              <td>8.5折</td>
+              <td>生日礼包+¥50券</td>
+              <td>1.2倍</td>
+            </tr>
+            <tr>
+              <td><span class="level-badge platinum">白金会员</span></td>
+              <td>5000-9999</td>
+              <td>8折</td>
+              <td>生日礼包+¥100券</td>
+              <td>1.5倍</td>
+            </tr>
+            <tr>
+              <td><span class="level-badge diamond">黑卡会员</span></td>
+              <td>10000+</td>
+              <td>8折+新品试用</td>
+              <td>专属生日礼盒</td>
+              <td>2倍</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="level-notes">
+        <p><strong>成长值获取方式：</strong>每消费¥1=1成长值，参与活动可获得额外成长值</p>
+        <p><strong>等级有效期：</strong>会员等级有效期为1年，到期后根据过去1年累计成长值重新评定</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚（与首页相同） -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>购物指南</h4>
+        <ul>
+          <li><a href="#">购物流程</a></li>
+          <li><a href="#">会员制度</a></li>
+          <li><a href="#">常见问题</a></li>
+          <li><a href="#">联系客服</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>配送方式</h4>
+        <ul>
+          <li><a href="#">上门自提</a></li>
+          <li><a href="#">快递配送</a></li>
+          <li><a href="#">配送范围</a></li>
+          <li><a href="#">配送费用</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>支付方式</h4>
+        <ul>
+          <li><a href="#">在线支付</a></li>
+          <li><a href="#">货到付款</a></li>
+          <li><a href="#">分期付款</a></li>
+          <li><a href="#">礼品卡支付</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于国色坊</h4>
+        <ul>
+          <li><a href="#">品牌故事</a></li>
+          <li><a href="#">新闻中心</a></li>
+          <li><a href="#">加入我们</a></li>
+          <li><a href="#">门店查询</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关注我们</h4>
+        <div class="social-links"> <a href="#"><i class="fab fa-weixin"></i></a> <a href="#"><i class="fab fa-weibo"></i></a> <a href="#"><i class="fab fa-qq"></i></a>  </div>
+        <div class="contact-info">
+          <p>客服热线：400-123-4567</p>
+          <p>服务时间：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 国色坊中国美妆品牌宣传有限公司  版权所有</p>
+      <div class="legal-links"> <a href="#">隐私政策</a> <a href="#">使用条款</a> <a href="#">法律声明</a> </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产品详情 - 卡姿兰</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- 顶部导航栏 -->
+<header class="header">
+  <div class="container">
+    <div class="logo"> <a href="#"><img src= "images/logo2.png" alt="卡姿兰"></a> </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+                    <li><a href="products.html">产品系列</a></li>
+                    <li><a href="tutorials.html">彩妆教程</a></li>
+                    <li><a href="about.html">品牌故事</a></li>
+                    <li><a href="member.html">会员中心</a></li>
+                    <li><a href="stores.html">线下门店</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons"> <a href="#"><i class="fas fa-search"></i></a> <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fas fa-shopping-bag"></i></a> </div>
+  </div>
+</header>
+<!-- 产品详情容器 -->
+<div class="product-container"> 
+  <!-- 面包屑导航 -->
+  <div class="product-breadcrumb"> <a href="#">首页</a> <span>/</span> <a href="#">彩妆</a> <span>/</span> <a href="#">唇部彩妆</a> <span>/</span> <a href="#">唇釉</a> <span>/</span> <span>卡姿兰雾吻唇釉</span> </div>
+  
+  <!-- 产品主要内容区 -->
+  <div class="product-content"> 
+    <!-- 产品图集 -->
+    <div class="product-gallery"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="main-image" id="mainImage">
+      <div class="thumbnail-container"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="thumbnail active" data-large="images/product-detail-main.jpg"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="thumbnail" data-large="images/product-detail-main.jpg"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="thumbnail" data-large="images/product-detail-main.jpg"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="thumbnail" data-large="images/product-detail-main.jpg"> </div>
+    </div>
+    
+    <!-- 产品信息 -->
+    <div class="product-info">
+      <h1 class="product-title">卡姿兰雾吻唇釉 #M01 蜜桃色</h1>
+      <div class="product-subtitle">雾面哑光 持久不脱色 轻盈不拔干</div>
+      <div class="product-price"> <span class="current-price">¥89</span> <span class="original-price">¥129</span> <span class="discount-badge">限时7折</span> </div>
+      <div class="product-meta">
+        <div class="meta-item">
+          <div class="meta-label">产品编号</div>
+          <div class="meta-value">CSL-2025-M01</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">销量</div>
+          <div class="meta-value">已售 5,832 件</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">评价</div>
+          <div class="meta-value"> <span style="color: #ffb400;"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </span> (1,245条评价) </div>
+        </div>
+      </div>
+      
+      <!-- 颜色选择 -->
+      <div class="meta-item">
+        <div class="meta-label">颜色</div>
+        <div class="meta-value">
+          <div class="color-options">
+            <div class="color-option selected" style="background-color: #f8a7b3;" data-color="M01 蜜桃色"></div>
+            <div class="color-option" style="background-color: #e83a7d;" data-color="M02 玫瑰红"></div>
+            <div class="color-option" style="background-color: #9e1f3c;" data-color="M03 车厘子"></div>
+            <div class="color-option" style="background-color: #f56c6c;" data-color="M04 西瓜红"></div>
+          </div>
+          <div id="selectedColor" style="font-size: 14px; margin-top: 5px;">M01 蜜桃色</div>
+        </div>
+      </div>
+      
+      <!-- 数量选择 -->
+      <div class="quantity-selector">
+        <div class="quantity-title">数量</div>
+        <div class="quantity-control">
+          <button class="quantity-btn">-</button>
+          <input type="text" class="quantity-input" value="1">
+          <button class="quantity-btn">+</button>
+        </div>
+      </div>
+      
+      <!-- 产品操作按钮 -->
+      <div class="product-actions">
+        <button class="btn-product btn-cart">加入购物车</button>
+        <button class="btn-product btn-wishlist"> <i class="far fa-heart"></i> </button>
+      </div>
+      
+      <!-- 促销信息 -->
+      <div class="product-promotion">
+        <div class="promotion-title"> <i class="fas fa-gift"></i> 促销优惠 </div>
+        <div class="promotion-item">满299元减30元，满499元减80元</div>
+        <div class="promotion-item">新用户首单立减15元</div>
+        <div class="promotion-item">会员专享8.5折优惠</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 产品详情标签页 -->
+  <div class="product-tabs">
+    <div class="tab-header">
+      <button class="tab-btn active" data-tab="description">产品详情</button>
+      <button class="tab-btn" data-tab="spec">规格参数</button>
+      <button class="tab-btn" data-tab="reviews">商品评价(1,245)</button>
+      <button class="tab-btn" data-tab="qa">常见问题</button>
+    </div>
+    <div class="tab-content active" id="description">
+      <h3>产品介绍</h3>
+      <p>卡姿兰雾吻唇釉，采用创新哑光配方，一抹成雾，轻盈无感，持久锁色。富含植物精油成分，滋润双唇不拔干，打造高级雾面妆效。</p>
+     
+      <h3>产品特点</h3>
+      <ul>
+        <li>高级雾面妆效：独特哑光配方，打造高级雾面唇妆</li>
+        <li>持久锁色：长效持妆8小时，不易脱色</li>
+        <li>轻盈舒适：轻薄质地，无厚重感</li>
+        <li>滋润保湿：含植物精油成分，呵护双唇</li>
+        <li>易涂抹：创新刷头设计，精准上色</li>
+      </ul>
+     </div>
+    <div class="tab-content" id="spec">
+      <h3>规格参数</h3>
+      <table style="width: 100%; border-collapse: collapse;">
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; width: 120px; color: #666;">产品名称</td>
+          <td style="padding: 10px;">卡姿兰雾吻唇釉</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">色号</td>
+          <td style="padding: 10px;">M01 蜜桃色</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">规格</td>
+          <td style="padding: 10px;">3.5g</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">保质期</td>
+          <td style="padding: 10px;">36个月</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">产地</td>
+          <td style="padding: 10px;">中国</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">适合肤质</td>
+          <td style="padding: 10px;">所有肤质</td>
+        </tr>
+      </table>
+    </div>
+    <div class="tab-content" id="reviews">
+      <h3>商品评价</h3>
+      <div style="display: flex; align-items: center; margin-bottom: 20px;">
+        <div style="font-size: 28px; color: #e83a7d; margin-right: 15px;">4.8</div>
+        <div>
+          <div style="color: #ffb400; margin-bottom: 5px;"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>
+          <div style="font-size: 14px; color: #666;">1,245条评价</div>
+        </div>
+      </div>
+      <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;"> <span style="font-size: 14px; color: #333;">全部评价(1,245)</span> <a href="#" style="font-size: 14px; color: #e83a7d; text-decoration: none;">写评价</a> </div>
+        <div style="display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px;">
+          <button style="padding: 5px 15px; background-color: #ffecec; color: #e83a7d; border: none; border-radius: 15px; font-size: 14px; white-space: nowrap;">有图(428)</button>
+          <button style="padding: 5px 15px; background-color: #f9f9f9; color: #666; border: none; border-radius: 15px; font-size: 14px; white-space: nowrap;">好评(1,128)</button>
+          <button style="padding: 5px 15px; background-color: #f9f9f9; color: #666; border: none; border-radius: 15px; font-size: 14px; white-space: nowrap;">中评(89)</button>
+          <button style="padding: 5px 15px; background-color: #f9f9f9; color: #666; border: none; border-radius: 15px; font-size: 14px; white-space: nowrap;">差评(28)</button>
+        </div>
+      </div>
+      
+      <!-- 评价示例 -->
+      <div style="border-bottom: 1px solid #f0f0f0; padding: 15px 0;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;"> <span style="font-weight: bold;">匿名用户</span> <span style="color: #999; font-size: 14px;">2025-05-10</span> </div>
+        <div style="color: #ffb400; margin-bottom: 10px;"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+        <div style="margin-bottom: 10px;"> 颜色非常漂亮，上嘴很显白，而且不拔干，比我之前买的国际大牌还要好用！ </div>
+        <div style="display: flex; gap: 10px;"> </div>
+      </div>
+      <div style="text-align: center; margin-top: 20px;">
+        <button style="padding: 8px 20px; background-color: white; color: #e83a7d; border: 1px solid #e83a7d; border-radius: 4px; cursor: pointer;">查看更多评价</button>
+      </div>
+    </div>
+    <div class="tab-content" id="qa">
+      <h3>常见问题</h3>
+      <div style="margin-bottom: 20px;">
+        <div style="font-weight: bold; margin-bottom: 5px;">Q: 这款唇釉会拔干吗？</div>
+        <div style="color: #666; line-height: 1.6;">A: 卡姿兰雾吻唇釉含有植物精油成分，虽然是哑光质地但不会拔干，比传统哑光唇釉更滋润。</div>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <div style="font-weight: bold; margin-bottom: 5px;">Q: 持久度如何？会沾杯吗？</div>
+        <div style="color: #666; line-height: 1.6;">A: 这款唇釉持久度很好，正常喝水会有轻微沾杯，但颜色基本不会掉，可以保持6-8小时。</div>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <div style="font-weight: bold; margin-bottom: 5px;">Q: 敏感唇部可以使用吗？</div>
+        <div style="color: #666; line-height: 1.6;">A: 本产品经过皮肤测试，温和不刺激，但如果您有特别敏感的唇部，建议先在手腕内侧测试。</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 相关推荐 -->
+  <div class="related-products">
+    <h2 class="section-title">猜你喜欢</h2>
+    <div class="related-list"> 
+      <!-- 相关商品1 -->
+      <div class="related-item"> <img src="images/related1.jpg" alt="相关商品" class="related-image">
+        <div class="related-info">
+          <div class="related-name">卡姿兰水吻唇膏 #S05 草莓红</div>
+          <div class="related-price">¥99 <span class="related-original-price">¥129</span></div>
+        </div>
+      </div>
+      
+      <!-- 相关商品2 -->
+      <div class="related-item"> <img src="images/related2.jpg" alt="相关商品" class="related-image">
+        <div class="related-info">
+          <div class="related-name">卡姿兰大眼睛双头睫毛膏</div>
+          <div class="related-price">¥109 <span class="related-original-price">¥139</span></div>
+        </div>
+      </div>
+      
+      <!-- 相关商品3 -->
+      <div class="related-item"> <img src="images/related3.jpg" alt="相关商品" class="related-image">
+        <div class="related-info">
+          <div class="related-name">卡姿兰小奶猫粉底液 #02 自然色</div>
+          <div class="related-price">¥159 <span class="related-original-price">¥199</span></div>
+        </div>
+      </div>
+      
+      <!-- 相关商品4 -->
+      <div class="related-item"> <img src="images/related4.jpg" alt="相关商品" class="related-image">
+        <div class="related-info">
+          <div class="related-name">卡姿兰精细眉笔 #03 灰棕色</div>
+          <div class="related-price">¥59 <span class="related-original-price">¥79</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 底部 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>购物指南</h4>
+        <ul>
+          <li><a href="#">购物流程</a></li>
+          <li><a href="#">会员制度</a></li>
+          <li><a href="#">常见问题</a></li>
+          <li><a href="#">联系客服</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>配送方式</h4>
+        <ul>
+          <li><a href="#">上门自提</a></li>
+          <li><a href="#">快递配送</a></li>
+          <li><a href="#">配送范围</a></li>
+          <li><a href="#">配送费用</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>支付方式</h4>
+        <ul>
+          <li><a href="#">在线支付</a></li>
+          <li><a href="#">货到付款</a></li>
+          <li><a href="#">分期付款</a></li>
+          <li><a href="#">礼品卡支付</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于卡姿兰</h4>
+        <ul>
+          <li><a href="#">品牌故事</a></li>
+          <li><a href="#">新闻中心</a></li>
+          <li><a href="#">加入我们</a></li>
+          <li><a href="#">门店查询</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关注我们</h4>
+        <div class="social-links"> <a href="#"><i class="fab fa-weixin"></i></a> <a href="#"><i class="fab fa-weibo"></i></a> <a href="#"><i class="fab fa-qq"></i></a>  </div>
+        <div class="contact-info">
+          <p>客服热线：400-123-4567</p>
+          <p>服务时间：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 卡姿兰化妆品有限公司 版权所有</p>
+      <div class="legal-links"> <a href="#">隐私政策</a> <a href="#">使用条款</a> <a href="#">法律声明</a> </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

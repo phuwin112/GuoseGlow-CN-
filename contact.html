@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系我们 - 卡姿兰</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- 顶部导航栏（与首页相同） -->
+<header class="header">
+  <div class="container">
+    <div class="logo"> <a href="index.html"><img src= "images/logo2.png" alt="卡姿兰"></a> </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="products.html">产品系列</a></li>
+        <li><a href="tutorials.html">彩妆教程</a></li>
+        <li><a href="about.html">品牌故事</a></li>
+        <li><a href="member.html">会员中心</a></li>
+        <li><a href="stores.html">线下门店</a></li>
+        <li><a href="contact.html" class="active">联系我们</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons"> <a href="#"><i class="fas fa-search"></i></a> <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fas fa-shopping-bag"></i></a> </div>
+  </div>
+</header>
+
+<!-- 面包屑导航 -->
+<section class="breadcrumb">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><i class="fas fa-angle-right"></i></li>
+      <li>联系我们</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 联系我们主内容 -->
+<section class="contact-main">
+  <div class="container">
+    <div class="section-header">
+      <h1>联系我们</h1>
+      <p>无论您有任何问题或建议，我们都随时准备为您提供帮助</p>
+    </div>
+    <div class="contact-content"> 
+      <!-- 联系方式 -->
+      <div class="contact-methods">
+        <div class="contact-card">
+          <div class="contact-icon"> <i class="fas fa-phone-alt"></i> </div>
+          <h3>客服热线</h3>
+          <p>400-123-4567</p>
+          <p class="contact-hours">服务时间: 周一至周日 9:00-21:00</p>
+          <a href="tel:4001234567" class="btn btn-small">立即拨打</a> </div>
+        <div class="contact-card">
+          <div class="contact-icon"> <i class="fas fa-envelope"></i> </div>
+          <h3>电子邮件</h3>
+          <p>GuoseGlow@.com</p>
+          <p class="contact-hours">24小时内回复</p>
+          <a href="mailto:service@carslan.com" class="btn btn-outline btn-small">发送邮件</a> </div>
+        <div class="contact-card">
+          <div class="contact-icon"> <i class="fas fa-comment-dots"></i> </div>
+          <h3>在线客服</h3>
+          <p>微信公众号/小程序</p>
+          <p class="contact-hours">服务时间: 9:00-21:00</p>
+          <a href="#" class="btn btn-small">立即咨询</a> </div>
+        <div class="contact-card">
+          <div class="contact-icon"> <i class="fas fa-map-marker-alt"></i> </div>
+          <h3>公司地址</h3>
+          <p>广州市天河区粤垦路198号</p>
+          <p class="contact-hours">工作时间: 周一至周五 9:00-18:00</p>
+          <a href="#" class="btn btn-outline btn-small">查看地图</a> </div>
+      </div>
+      
+      <!-- 联系表单 -->
+      <div class="contact-form-section">
+        <h2 class="section-title">发送消息</h2>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">姓名</label>
+              <input type="text" id="name" placeholder="请输入您的姓名" required>
+            </div>
+            <div class="form-group">
+              <label for="email">电子邮箱</label>
+              <input type="email" id="email" placeholder="请输入您的电子邮箱" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">联系电话</label>
+            <input type="tel" id="phone" placeholder="请输入您的联系电话">
+          </div>
+          <div class="form-group">
+            <label for="subject">主题</label>
+            <select id="subject" required>
+              <option value="">请选择咨询主题</option>
+              <option value="product">产品咨询</option>
+              <option value="order">订单查询</option>
+              <option value="after-sale">售后服务</option>
+              <option value="cooperation">商务合作</option>
+              <option value="other">其他问题</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">留言内容</label>
+            <textarea id="message" rows="5" placeholder="请输入您的留言内容" required></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn">发送消息</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 常见问题 -->
+<section class="contact-faq">
+  <div class="container">
+    <h2 class="section-title">常见问题</h2>
+    <div class="faq-accordion"> 
+      <!-- 问题1 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>如何查询订单物流信息?</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>您可以通过以下方式查询订单物流信息：</p>
+          <ol>
+            <li>登录您的卡姿兰会员账户，在"我的订单"中查看物流信息</li>
+            <li>关注"卡姿兰官方服务号"，绑定您的手机号后可接收物流推送</li>
+            <li>拨打我们的客服热线400-123-4567，提供订单号查询</li>
+          </ol>
+        </div>
+      </div>
+      
+      <!-- 问题2 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>产品使用后出现过敏反应怎么办?</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>如果您在使用卡姿兰产品后出现不适，请立即停止使用该产品，并用清水洗净。建议您：</p>
+          <ul>
+            <li>保留产品包装和购买凭证</li>
+            <li>拍照记录过敏情况</li>
+            <li>及时联系我们的客服人员，我们将为您提供专业的建议和解决方案</li>
+            <li>如症状严重，请立即就医</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- 问题3 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>如何成为GuoseGlow会员?</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>您可以通过以下方式成为卡姿兰会员：</p>
+          <ul>
+            <li>在卡姿兰官网注册账号</li>
+            <li>关注"卡姿兰官方服务号"，通过微信注册</li>
+            <li>在任意卡姿兰线下门店购物时注册</li>
+          </ul>
+          <p>注册会员可享受积分累积、专属折扣、生日礼遇等多项特权。</p>
+        </div>
+      </div>
+      
+      <!-- 问题4 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>商品退换货政策是怎样的?</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>卡姿兰提供7天无理由退换货服务(特殊商品除外)：</p>
+          <ul>
+            <li>自收到商品之日起7天内可申请退换货</li>
+            <li>商品需保持完好，未经使用，包装齐全</li>
+            <li>请提供原始购买凭证</li>
+            <li>退换货运费由买家承担(质量问题除外)</li>
+          </ul>
+          <p>详细政策请查阅我们的<a href="#">退换货政策</a>。</p>
+        </div>
+      </div>
+      
+      <!-- 问题5 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>如何辨别品牌正品?</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>为确保您购买到正品卡姿兰产品，请注意以下几点：</p>
+          <ul>
+            <li>通过卡姿兰官网、官方旗舰店或授权线下门店购买</li>
+            <li>正品包装上有防伪标识，可通过官方渠道验证</li>
+            <li>正品产品质地细腻，气味清新，使用效果良好</li>
+            <li>价格明显低于市场价的产品需谨慎购买</li>
+          </ul>
+          <p>如有疑问，可通过客服热线400-123-4567咨询。</p>
+        </div>
+      </div>
+    </div>
+    <div class="faq-more"> <a href="#" class="btn btn-outline">查看更多常见问题</a> </div>
+  </div>
+</section>
+
+<!-- 页脚（与首页相同） -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>购物指南</h4>
+        <ul>
+          <li><a href="#">购物流程</a></li>
+          <li><a href="#">会员制度</a></li>
+          <li><a href="#">常见问题</a></li>
+          <li><a href="#">联系客服</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>配送方式</h4>
+        <ul>
+          <li><a href="#">上门自提</a></li>
+          <li><a href="#">快递配送</a></li>
+          <li><a href="#">配送范围</a></li>
+          <li><a href="#">配送费用</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>支付方式</h4>
+        <ul>
+          <li><a href="#">在线支付</a></li>
+          <li><a href="#">货到付款</a></li>
+          <li><a href="#">分期付款</a></li>
+          <li><a href="#">礼品卡支付</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于国色坊</h4>
+        <ul>
+          <li><a href="#">品牌故事</a></li>
+          <li><a href="#">新闻中心</a></li>
+          <li><a href="#">加入我们</a></li>
+          <li><a href="#">门店查询</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关注我们</h4>
+        <div class="social-links"> <a href="#"><i class="fab fa-weixin"></i></a> <a href="#"><i class="fab fa-weibo"></i></a> <a href="#"><i class="fab fa-qq"></i></a>  </div>
+        <div class="contact-info">
+          <p>客服热线：400-123-4567</p>
+          <p>服务时间：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 国色坊中国美妆品牌宣传有限公司  版权所有</p>
+      <div class="legal-links"> <a href="#">隐私政策</a> <a href="#">使用条款</a> <a href="#">法律声明</a> </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
